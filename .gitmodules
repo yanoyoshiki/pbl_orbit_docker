@@ -1,0 +1,3 @@
+[submodule "src/rl_games"]
+	path = src/rl_games
+	url = git@github.com:rllab-MARL/rl_games.git
