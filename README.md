@@ -13,11 +13,11 @@ After entering the container(a terminal for docker container)
 
 After this, please stop the docker, and git stash the skrl and rl_games directory.(above controlled local terminal)
 1. docker stop orbit-2022.2.0_pbl
-2. cd ../src
-3. cd skrl
-4. git stash
-5. cd ../rlgames
-6. git stash
+2. cd <this repo dir>
+2. cd src/skrl
+3. git stash
+4. cd ../rlgames
+5. git stash
 
 After git stash, start the docker again
 
