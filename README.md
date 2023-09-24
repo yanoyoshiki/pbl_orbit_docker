@@ -1,6 +1,6 @@
 The comand lines to run the docker(on local terminal)
 1. xhost +
-2. git clone -b yano https://github.com/rllab-MARL/pbl_orbit_docker.git
+2. git clone https://github.com/rllab-MARL/pbl_orbit_docker.git
 3. cd docker_0 
 4. ./build.sh
 5. ./run.sh
