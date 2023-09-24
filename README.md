@@ -1,4 +1,4 @@
-The comand lines to run the docker
+The comand lines to run the docker(on local terminal)
 1. xhost +
 2. git clone -b yano https://github.com/rllab-MARL/pbl_orbit_docker.git
 3. cd docker_0 
@@ -6,34 +6,32 @@ The comand lines to run the docker
 5. ./run.sh
 
    
-After entering the container, in the current directory
+After entering the container(a terminal for docker container)
+1.  ./orbit.sh -i
+2.  ./orbit.sh -e
+3. orbit -p -m pip install wandb
 
-
-7. ./orbit.sh -i
-8. ./orbit.sh -e
-9. orbit -p -m pip install wandb
-
-
-After this, please stop the docker, and git stash the skrl and rl_games directory.
----------- docker stop orbit-2022.2.0_pbl(on another terminal)
-
-
-10. cd ../src
-11. cd skrl
-12. git stash
-13. cd ../rlgames
-14. git stash
-
+After this, please stop the docker, and git stash the skrl and rl_games directory.(above controlled local terminal)
+1. docker stop orbit-2022.2.0_pbl
+2. cd ../src
+3. cd skrl
+4. git stash
+5. cd ../rlgames
+6. git stash
 
 After git stash, start the docker again
 
 
-15. docker start orbit-2022.2.0_pbl
-16. docker exec -it orbit-2022.2.0_pbl bash
+7. docker start orbit-2022.2.0_pbl
+8. docker exec -it orbit-2022.2.0_pbl bash
 
-The command lines for all the four testings are:
-17. orbit -p source/standalone/workflows/skrl_discrete/train.py --task Isaac-MA-Transportskrl-v0 --num_envs 64
-18. orbit -p source/standalone/workflows/skrl_discrete/train.py --task Isaac-MA-Transportskrl-v0 --num_envs 64 --headless
+
+
+The command lines for all the four testings are:(a terminal for docker container)
+
+1. orbit -p source/standalone/workflows/skrl_discrete/train.py --task Isaac-MA-Transportskrl-v0 --num_envs 64
+
+2. orbit -p source/standalone/workflows/skrl_discrete/train.py --task Isaac-MA-Transportskrl-v0 --num_envs 64 --headless
 
 
 
