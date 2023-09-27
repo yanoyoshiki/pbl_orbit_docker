@@ -4,7 +4,7 @@
 [submodule "src/Orbit"]
 	path = src/Orbit
 	url = git@github.com:rllab-MARL/Orbit.git
-	branch = 1_MARL
+	branch = develop
 [submodule "src/skrl"]
 	path = src/skrl
 	url = git@github.com:rllab-MARL/skrl.git
